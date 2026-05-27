@@ -33,6 +33,7 @@ def check_password_strength(pwd):
             problem_list.append(msg)
     return problem_list
 gen_pwd = create_pwd()
+print("Pwd gererator + tester using regex.")
 print(f"Your new pwd is {gen_pwd}")
 results = check_password_strength(gen_pwd)
 if not results:
